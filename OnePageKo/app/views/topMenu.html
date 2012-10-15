@@ -1,0 +1,3 @@
+﻿<ul data-bind="foreach : items">
+    <li data-bind="css : { selected : $parent.Selected() == $data}"><a href="#" data-bind="text : $data, click : $parent.onClick"></a></li>
+</ul>  

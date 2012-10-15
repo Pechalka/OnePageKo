@@ -1,0 +1,16 @@
+﻿<div>
+    <ul data-bind="foreach : topMenu">
+        <li data-bind="css : { selected : $parent.topMenuSelectedItem() == $data}"><a data-bind="text : $data, click : $parent.secetTopMenu" href="#"></a></li>
+    </ul>
+</div>
+
+<div>
+    <ul data-bind="foreach : leftMenu">
+        <li data-bind="css : { selected : $parent.leftMenuSelectedItem() == hash}"><a data-bind="text : text, click : $parent.navigateCatalog" href="#"></a></li>
+    </ul>
+</div>
+
+<div data-bind="with : content">
+<!-- ko template:{html:html,data:data} -->
+<!-- /ko -->
+</div>
